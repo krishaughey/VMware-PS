@@ -1,3 +1,6 @@
+## Get VMware Guest Info from localhost
+##### author: Kristopher F. Haughey
+
 Get-VM | %{
     $guest = $_ | Get-VMGuest
     $vm  = "" | Select VMname, Hostname, OSFullName, IPAddr1, IPAddr2, State, ToolsVersion
